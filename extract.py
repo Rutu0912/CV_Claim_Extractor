@@ -31,7 +31,7 @@ pdf_path = args.pdf_path
 doc = fitz.open(pdf_path)
 
 # =========================
-# TEXT EXTRACTION
+# 3. NORMAL TEXT EXTRACTION
 # =========================
 # First try normal text extraction.
 # This usually gives the best reading order
@@ -48,7 +48,7 @@ normal_lines = [
 ]
 
 # =========================
-# BLOCK-BASED EXTRACTION
+# 4. BLOCK-BASED EXTRACTION
 # =========================
 # Also build a second version using text blocks.
 # This can improve ordering for two-column CVs.
@@ -83,9 +83,9 @@ for page in doc:
             if line:
                 block_lines.append(line)
 
-# =========================
-# CHOOSE BETTER VERSION
-# =========================
+# ==========================
+# 5. CHOOSE BETTER VERSION
+# ==========================
 # Heuristic:
 # If block extraction produces significantly
 # more content, prefer it.
@@ -99,7 +99,7 @@ else:
 text = "\n".join(lines)
 
 # =========================
-# 4. IMAGE-ONLY PDF CHECK
+# 6. IMAGE-ONLY PDF CHECK
 # =========================
 # If text is empty, it means PDF has no text layer.
 # This handles scanned/photo CVs safely.
@@ -109,7 +109,7 @@ if not text.strip():
 
 
 # =========================
-# 6. MERGE HYPHENATED LINES
+# 7. MERGE HYPHENATED LINES
 # =========================
 # If a word is broken using "-" at line end,
 # join it with the next line.
@@ -125,14 +125,14 @@ for line in lines:
 lines = merged_lines
 
 # =========================
-# 7. BASIC LINE CLEANER
+# 8. BASIC LINE CLEANER
 # =========================
 # This removes bullets or symbols from the start of a line.
 def clean_start(line):
     return re.sub(r"^[^A-Za-z0-9]+", "", line).strip()
 
 # =========================
-# 11. TEXT URL EXTRACTION FUNCTION
+# 9. TEXT URL EXTRACTION FUNCTION
 # =========================
 # This function detects URLs written directly inside CV text.
 # Example: github.com/user, https://site.com, www.site.com/page
@@ -153,9 +153,9 @@ def find_links_in_line(line):
     return result
 
 
-# =========================
-# CANDIDATE NAME EXTRACTION
-# =========================
+# ===========================
+# 10. CANDIDATE NAME EXTRACTION
+# ===========================
 # Simple heuristic:
 # Candidate name is usually near the top of the CV.
 # We skip lines that look like headings, contacts, dates,
@@ -194,7 +194,7 @@ for line in lines[:20]:
 
 
 # =========================
-# 9. EMAIL EXTRACTION
+# 11. EMAIL EXTRACTION
 # =========================
 # This finds email addresses from full PDF text.
 emails = re.findall(
@@ -204,7 +204,7 @@ emails = re.findall(
 
 
 # =========================
-# 10. PHONE EXTRACTION
+# 12. PHONE EXTRACTION
 # =========================
 # This finds phone numbers from full PDF text.
 # Supports common 10-digit Indian style and country-code style numbers.
@@ -221,7 +221,7 @@ phones = [p.strip() for p in phones if len(re.sub(r'\D', '', p)) >= 10]
 
 
 # =========================
-# 12. COLLECT TEXT LINKS
+# 13. COLLECT TEXT LINKS
 # =========================
 # This scans every line and stores URLs found in visible CV text.
 # These links get source = "text".
@@ -237,7 +237,7 @@ for line in lines:
 
 
 # =========================
-# 13. COLLECT EMBEDDED PDF LINKS
+# 14. COLLECT EMBEDDED PDF LINKS
 # =========================
 # This extracts real PDF hyperlink annotations.
 # It also works when visible text is only "Link".
@@ -259,7 +259,7 @@ for page in doc:
 
 
 # =========================
-# 14. REMOVE DUPLICATE LINKS
+# 15. REMOVE DUPLICATE LINKS
 # =========================
 # This keeps only one copy of each URL.
 # Original order is preserved.
@@ -272,9 +272,9 @@ for link in links:
         seen_urls.add(link["url"])
 
 
-# =========================
-# SECTION TYPE DETECTION
-# =========================
+# ===========================
+# 16. SECTION TYPE DETECTION
+# ===========================
 # Simple heuristic:
 # Resume content is usually divided using headings.
 # We detect common claim headings.
@@ -338,9 +338,9 @@ def get_section_type(line):
 
     return ""
 
-# =========================
-# 16. TITLE-LIKE LINE CHECK
-# =========================
+# ==========================
+# 17. TITLE-LIKE LINE CHECK
+# ==========================
 # This checks whether a line looks like a claim title.
 # Used to split projects/experience/certifications into separate claims.
 
@@ -363,7 +363,7 @@ def is_title_like(original_line):
 
 
 # =========================
-# 17. CLAIM EXTRACTION
+# 18. CLAIM EXTRACTION
 # =========================
 # This is the main claim grouping logic.
 #
@@ -478,7 +478,7 @@ if current_claim:
     claims.append(current_claim)
 
 # =========================
-# 18. WARNING COLLECTION
+# 19. WARNING COLLECTION
 # =========================
 # These are non-fatal warnings.
 # The tool should still output valid JSON even if something is missing.
@@ -497,7 +497,7 @@ if not claims:
 
 
 # =========================
-# 19. FINAL JSON OUTPUT
+# 20. FINAL JSON OUTPUT
 # =========================
 # This builds the required JSON structure.
 output = {
@@ -517,7 +517,7 @@ output = {
 
 
 # =========================
-# 20. SAVE AND PRINT OUTPUT
+# 21. SAVE AND PRINT OUTPUT
 # =========================
 # Save result to cv.json and also print JSON to terminal.
 with open("cv.json", "w", encoding="utf-8") as file:

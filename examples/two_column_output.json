@@ -1,0 +1,109 @@
+{
+    "candidate": {
+        "name": "Arjun Mehta",
+        "email": "arjun.mehta@gmail.com",
+        "phone": "+91 98765 43210"
+    },
+    "links": [
+        {
+            "url": "github.com/arjunmehta",
+            "source": "text",
+            "anchor": "github.com/arjunmehta"
+        },
+        {
+            "url": "linkedin.com/in/arjunmehta",
+            "source": "text",
+            "anchor": "linkedin.com/in/arjunmehta"
+        },
+        {
+            "url": "https://razorpay.com/docs",
+            "source": "text",
+            "anchor": "https://razorpay.com/docs"
+        },
+        {
+            "url": "github.com/arjunmehta/smartcv-parser",
+            "source": "text",
+            "anchor": "github.com/arjunmehta/smartcv-parser"
+        },
+        {
+            "url": "https://ragbot.arjunmehta.dev",
+            "source": "text",
+            "anchor": "https://ragbot.arjunmehta.dev"
+        },
+        {
+            "url": "https://arxiv.org/abs/2301.12345",
+            "source": "text",
+            "anchor": "https://arxiv.org/abs/2301.12345"
+        },
+        {
+            "url": "https://github.com/arjunmehta",
+            "source": "embedded",
+            "anchor": "Link: github.com/arjunmehta"
+        }
+    ],
+    "claims": [
+        {
+            "type": "education",
+            "title": "B.Tech \u2014 Computer Science",
+            "details": "IIT Bombay  |  2016 \u2013 2020 CGPA: 8.7 / 10 ",
+            "links": []
+        },
+        {
+            "type": "certification",
+            "title": "AWS Solutions Architect",
+            "details": "Associate \u2014 2022 Google Cloud Professional Data Engineer \u2014 2023 ",
+            "links": []
+        },
+        {
+            "type": "experience",
+            "title": "Senior Software Engineer \u2014 Razorpay",
+            "details": "Jun 2022 \u2013 Present  |  Mumbai Built payment gateway microservices handling 2M+ txns/day. Reduced API latency by 40% using Redis caching layer. Led team of 5 engineers for checkout flow redesign. See https://razorpay.com/docs for public API docs. ",
+            "links": [
+                "https://razorpay.com/docs"
+            ]
+        },
+        {
+            "type": "experience",
+            "title": "Software Engineer \u2014 Flipkart",
+            "details": "Jul 2020 \u2013 May 2022  |  Bangalore Developed inventory management system with Django + Celery. Optimised SQL queries reducing DB load by 30%. Wrote unit tests achieving 85% code coverage. ",
+            "links": []
+        },
+        {
+            "type": "project",
+            "title": "SmartCV Parser",
+            "details": "Extracts structured data from CVs using PyMuPDF + NLP. Achieved 91% accuracy on 500+ CV benchmark dataset. Code: github.com/arjunmehta/smartcv-parser ",
+            "links": [
+                "github.com/arjunmehta/smartcv-parser"
+            ]
+        },
+        {
+            "type": "project",
+            "title": "RAG Chatbot",
+            "details": "Retrieval-augmented chatbot using LangChain + FAISS + OpenAI. Deployed on AWS Lambda with 99.9% uptime. Live demo: https://ragbot.arjunmehta.dev ",
+            "links": [
+                "https://ragbot.arjunmehta.dev"
+            ]
+        },
+        {
+            "type": "project",
+            "title": "Research: Efficient Transformers",
+            "details": "Published at ACL 2023 \u2014 sparse attention mechanisms. Paper: https://arxiv.org/abs/2301.12345 ",
+            "links": [
+                "https://arxiv.org/abs/2301.12345"
+            ]
+        },
+        {
+            "type": "hackathon",
+            "title": "Smart India Hackathon 2021 \u2014 Winner",
+            "details": "Built an AI-powered crop disease detection system. Beat 300+ teams. Prize: INR 1,00,000. Link: github.com/arjunmehta ",
+            "links": [
+                "github.com/arjunmehta"
+            ]
+        }
+    ],
+    "meta": {
+        "pages": 1,
+        "has_text_layer": true,
+        "warnings": []
+    }
+}

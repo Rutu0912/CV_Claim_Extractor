@@ -1,0 +1,91 @@
+{
+    "candidate": {
+        "name": "Rutu Patel",
+        "email": "rutupatel3715@gmail.com",
+        "phone": "+91 9712913705"
+    },
+    "links": [
+        {
+            "url": "github.com/Rutu0912/DroneDetection",
+            "source": "text",
+            "anchor": "github.com/Rutu0912/DroneDetection"
+        },
+        {
+            "url": "github.com/Rutu0912/AIJudicalReason",
+            "source": "text",
+            "anchor": "github.com/Rutu0912/AIJudicalReason"
+        },
+        {
+            "url": "mailto:rutupatel3715@gmail.com",
+            "source": "embedded",
+            "anchor": "rutupatel3715@gmail.com"
+        },
+        {
+            "url": "https://linkedin.com/in/rutu-patel-4721002b0",
+            "source": "embedded",
+            "anchor": "LinkedIn"
+        },
+        {
+            "url": "https://github.com/Rutu0912",
+            "source": "embedded",
+            "anchor": "GitHub"
+        },
+        {
+            "url": "https://github.com/Rutu0912/DroneDetection",
+            "source": "embedded",
+            "anchor": "GitHub Repository: github.com/Rutu0912/DroneDetection"
+        },
+        {
+            "url": "https://github.com/Rutu0912/AIJudicalReason",
+            "source": "embedded",
+            "anchor": "GitHub Repository: github.com/Rutu0912/AIJudicalReason"
+        }
+    ],
+    "claims": [
+        {
+            "type": "experience",
+            "title": "AI/ML Engineer Intern",
+            "details": "Jan 2026 \u2013 Apr 2026 VishlRAFrosy.ai Remote Developed and evaluated ML models using Python and Scikit-learn for predictive analytics on real-world datasets. Performed data preprocessing, feature engineering, model training, hyperparameter optimization, and performance evaluation. Contributed to AI research workflows and intelligent analytical solution development. ",
+            "links": []
+        },
+        {
+            "type": "experience",
+            "title": "React.js Frontend Intern",
+            "details": "Dec 2024 \u2013 Jan 2025 SoftCoding Solution Built responsive frontend interfaces and reusable UI components using React.js. Integrated REST APIs and optimized application performance and user experience. ",
+            "links": []
+        },
+        {
+            "type": "project",
+            "title": "Physics-Informed IoT-Based Drone Detection System",
+            "details": "Python, YOLOv8, OpenCV, ESP32, Telegram API GitHub Repository: github.com/Rutu0912/DroneDetection Developed a real-time drone detection system using Deep Learning and Computer Vision achieving reliable distinction between drones and birds. Implemented physics-informed filtering (trajectory, speed, acceleration, stability) on top of YOLOv8 to reduce false positives significantly. Designed a complete AI + IoT pipeline integrating ESP32 and Telegram API for automated real-time alert generation. Evaluated system performance on 10+ real-world drone videos and custom datasets. ",
+            "links": [
+                "github.com/Rutu0912/DroneDetection"
+            ]
+        },
+        {
+            "type": "project",
+            "title": "AI-Assisted Legal Judgment Analysis System",
+            "details": "Python, NLP, Flask, TF-IDF, Cosine Similarity, Indian Kanoon API GitHub Repository: github.com/Rutu0912/AIJudicalReason Developed an AI-powered legal judgment analysis system for Company, Criminal, and Property Law domains using NLP techniques. Performed preprocessing and TF-IDF-based feature extraction on legal documents and used cosine similarity for relevant case retrieval. Integrated Indian Kanoon API to access legal judgments and precedent cases. Built a Flask web application for legal domain classification and structured judgment analysis. ",
+            "links": [
+                "github.com/Rutu0912/AIJudicalReason"
+            ]
+        },
+        {
+            "type": "education",
+            "title": "Aditya Silver Oak Institute of Technology",
+            "details": "2022 \u2013 2026 Bachelor of Technology (B.Tech) in Computer Engineering | CGPA: 9.07/10 ",
+            "links": []
+        },
+        {
+            "type": "education",
+            "title": "R.P.P Girls High School & S.G Shah Higher Secondary School",
+            "details": "Secondary & Higher Secondary Education (Science Stream) ",
+            "links": []
+        }
+    ],
+    "meta": {
+        "pages": 1,
+        "has_text_layer": true,
+        "warnings": []
+    }
+}

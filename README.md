@@ -25,7 +25,22 @@ Example:
 python extract.py Resume_Examples/Rutu_Patel_Resume.pdf
 ```
 
+No arguments → prints usage and exits cleanly:
+
+```bash
+python extract.py
+```
+
 The tool prints the extracted JSON and also saves it to `cv.json`.
+
+## Clean Machine Setup
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+python extract.py path/to/cv.pdf
+```
 
 ## Approach
 

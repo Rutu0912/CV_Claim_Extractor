@@ -27,6 +27,12 @@ pip install -r requirements.txt
 Run the tool:
 
 ```bash
+python extract.py path/to/cv.pdf
+```
+
+Example:
+
+```bash
 python extract.py Resume_Examples/Rutu_Patel_Resume.pdf
 ```
 

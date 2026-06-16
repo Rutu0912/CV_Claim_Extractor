@@ -7,40 +7,30 @@ A command-line tool that extracts structured information from a CV PDF and outpu
 - Python 3.11
 - PyMuPDF
 
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Run
-
-```bash
-python extract.py path/to/cv.pdf
-```
-
-Example:
-
-```bash
-python extract.py Resume_Examples/Rutu_Patel_Resume.pdf
-```
-
-No arguments → prints usage and exits cleanly:
-
-```bash
-python extract.py
-```
-
-The tool prints the extracted JSON and also saves it to `cv.json`.
-
 ## Clean Machine Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Rutu0912/CV_Claim_Extractor.git
+cd CV_Claim_Extractor
+```
+
+Create a virtual environment and install dependencies:
 
 ```bash
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
-python extract.py path/to/cv.pdf
 ```
+
+Run the tool:
+
+```bash
+python extract.py Resume_Examples/Rutu_Patel_Resume.pdf
+```
+
+The command prints the extracted JSON and also saves it to `cv.json`.
 
 ## Approach
 

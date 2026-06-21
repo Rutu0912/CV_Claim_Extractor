@@ -329,9 +329,6 @@ def guess_type_from_content(title, details):
         JOB_TITLE_PATTERN.search(title) or DEGREE_PATTERN.search(title_lower)
     )
 
-    if has_publication_signal and not title_has_job_or_degree:
-        new_title, new_details = split_long_publication_title(title, details)
-        return "publication", new_title, new_details
 
     has_cert_signal = bool(CERT_PATTERN.search(t))
     has_hackathon_signal = bool(HACKATHON_PATTERN.search(t))
@@ -362,6 +359,11 @@ def guess_type_from_content(title, details):
     # action verbs (built/designed/etc) = most likely a project
     if has_action:
         return "project", title, details
+    
+    # publication check after project check
+    if has_publication_signal and not title_has_job_or_degree:
+        new_title, new_details = split_long_publication_title(title, details)
+        return "publication", new_title, new_details
 
     if has_date_range:
         return "experience", title, details

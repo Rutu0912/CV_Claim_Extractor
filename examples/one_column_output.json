@@ -1,0 +1,100 @@
+{
+    "candidate": {
+        "name": "Rohan Verma",
+        "email": "rohan.verma@outlook.com",
+        "phone": "+91-99001-88234"
+    },
+    "links": [
+        {
+            "url": "github.com/rohanverma",
+            "source": "text",
+            "anchor": "github.com/rohanverma"
+        },
+        {
+            "url": "linkedin.com/in/rohanverma",
+            "source": "text",
+            "anchor": "linkedin.com/in/rohanverma"
+        },
+        {
+            "url": "https://developer.swiggy.com/docs/order-tracking",
+            "source": "text",
+            "anchor": "https://developer.swiggy.com/docs/order-tracking"
+        },
+        {
+            "url": "https://openblog.rohanverma.dev",
+            "source": "text",
+            "anchor": "https://openblog.rohanverma.dev"
+        },
+        {
+            "url": "github.com/rohanverma/openblog",
+            "source": "text",
+            "anchor": "github.com/rohanverma/openblog"
+        },
+        {
+            "url": "github.com/rohanverma/stocksense",
+            "source": "text",
+            "anchor": "github.com/rohanverma/stocksense"
+        },
+        {
+            "url": "https://stocksense.rohanverma.dev",
+            "source": "text",
+            "anchor": "https://stocksense.rohanverma.dev"
+        },
+        {
+            "url": "github.com/rohanverma/contribhub",
+            "source": "text",
+            "anchor": "github.com/rohanverma/contribhub"
+        },
+        {
+            "url": "https://arxiv.org/abs/2306.14821",
+            "source": "text",
+            "anchor": "https://arxiv.org/abs/2306.14821"
+        },
+        {
+            "url": "https://ethindia-lending.rohanverma.dev",
+            "source": "text",
+            "anchor": "https://ethindia-lending.rohanverma.dev"
+        }
+    ],
+    "claims": [
+        {
+            "type": "experience",
+            "title": "Full Stack Developer \u2014 Swiggy",
+            "details": "Aug 2021 \u2013 Present Pune, India",
+            "links": []
+        },
+        {
+            "type": "experience",
+            "title": "Junior Developer Intern \u2014 Zoho",
+            "details": "Jan 2021 \u2013 Jul 2021 Chennai, India",
+            "links": []
+        },
+        {
+            "type": "publication",
+            "title": "LSTM vs Transformer for Time Series Forecasting: An Empirical Study",
+            "details": "Rohan Verma \u2014 ICML Workshop 2023 https://arxiv.org/abs/2306.14821",
+            "links": [
+                "https://arxiv.org/abs/2306.14821"
+            ]
+        },
+        {
+            "type": "hackathon",
+            "title": "ETHIndia 2022 \u2014 2nd Place",
+            "details": "DeFi lending protocol on Polygon. Prize: $5000. Demo: https://ethindia-lending.rohanverma.dev AngelHack Bangalore 2021 \u2014 Winner",
+            "links": [
+                "https://ethindia-lending.rohanverma.dev"
+            ]
+        },
+        {
+            "type": "education",
+            "title": "B.E. \u2014 Information Technology",
+            "details": "2017 \u2013 2021 Pune Institute of Computer Technology  |  CGPA: 8.4 / 10",
+            "links": []
+        }
+    ],
+    "meta": {
+        "pages": 1,
+        "has_text_layer": true,
+        "warnings": []
+    }
+}

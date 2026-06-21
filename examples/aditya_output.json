@@ -25,7 +25,7 @@
             "links": []
         },
         {
-            "type": "publication",
+            "type": "project",
             "title": "Scenario-Driven Land Change Anomaly Assessment for Border Surveillance",
             "details": "DRDO, Jul 2024  Aug 2025 | Published Designed an ML pipeline for detecting land-cover anomalies in satellite imagery using GIS and Remote Sensing tools for defense border surveillance. Applied multi-temporal feature extraction and spatial risk modelling across large geospatial datasets to identify statistically signicant change patterns. Research published in IJERT; full citation at DOI: zenodo.18441874.",
             "links": []

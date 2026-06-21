@@ -14,38 +14,44 @@
     "claims": [
         {
             "type": "experience",
-            "title": "Research Fellow \u0015 Geospatial AI & Remote Sensing",
-            "details": "Jun 2024 \u0015 Aug 2024 Defence Research and Development Lab (DRDL), DRDO India Built geospatial anomaly detection models for border surveillance using satellite imagery and multi-temporal land-change analysis with ArcGIS, QGIS, and Google Earth Engine. Performed feature extraction, risk modelling, and data preprocessing on large-scale remote sensing datasets to support defense intelligence work\u001dows. Co-authored research published in IJERT (DOI: 10.5281/zenodo.18441874); delivered technical reports for the DRDO project team. ",
+            "title": "Research Fellow  Geospatial AI & Remote Sensing",
+            "details": "Jun 2024  Aug 2024 Defence Research and Development Lab (DRDL), DRDO India Built geospatial anomaly detection models for border surveillance using satellite imagery and multi-temporal land-change analysis with ArcGIS, QGIS, and Google Earth Engine. Performed feature extraction, risk modelling, and data preprocessing on large-scale remote sensing datasets to support defense intelli- gence workows. Co-authored research published in IJERT (DOI: 10.5281/zenodo.18441874); delivered technical reports for the DRDO project team.",
             "links": []
         },
         {
             "type": "experience",
-            "title": "DRDO Representative \u0015 Industrial Training",
-            "details": "Jun 2024 Low Emissions Carbon Pathway Program India Represented DRDO in cross-organizational technical sessions on sustainable development, environmental impact assessment, and lowemission strategies. Contributed to collaborative discussions on carbon reduction pathways with multi-disciplinary engineering teams. ",
+            "title": "DRDO Representative  Industrial Training",
+            "details": "Jun 2024 Low Emissions Carbon Pathway Program India Represented DRDO in cross-organizational technical sessions on sustainable development, environmental impact assessment, and low- emission strategies. Contributed to collaborative discussions on carbon reduction pathways with multi-disciplinary engineering teams.",
             "links": []
         },
         {
-            "type": "project",
+            "type": "publication",
             "title": "Scenario-Driven Land Change Anomaly Assessment for Border Surveillance",
-            "details": "DRDO, Jul 2024 \u0015 Aug 2025 | Published Designed an ML pipeline for detecting land-cover anomalies in satellite imagery using GIS and Remote Sensing tools for defense border surveillance. Applied multi-temporal feature extraction and spatial risk modelling across large geospatial datasets to identify statistically signi\u001ccant change patterns. Research published in IJERT; full citation at DOI: zenodo.18441874. ",
+            "details": "DRDO, Jul 2024  Aug 2025 | Published Designed an ML pipeline for detecting land-cover anomalies in satellite imagery using GIS and Remote Sensing tools for defense border surveillance. Applied multi-temporal feature extraction and spatial risk modelling across large geospatial datasets to identify statistically signicant change patterns. Research published in IJERT; full citation at DOI: zenodo.18441874.",
             "links": []
         },
         {
             "type": "project",
             "title": "Physics-Informed IoT-Based Real-Time Drone Detection System",
-            "details": "Python, YOLOv8, OpenCV, ESP32 Engineered a real-time drone detection system using YOLOv8 and OpenCV on live video streams, achieving high precision in distinguishing drones from birds via physics-informed motion \u001cltering (speed, trajectory, stability). Reduced false positive rate signi\u001ccantly by integrating kinematic constraints into the object classi\u001ccation post-processing stage. Deployed an IoT alert layer using ESP32 microcontrollers and Telegram API for automated real-time threat noti\u001ccations. Built a complete end-to-end pipeline covering video ingestion, detection, classi\u001ccation, and alert dispatch; validated on real-world footage and a custom-annotated dataset. ",
+            "details": "Python, YOLOv8, OpenCV, ESP32 Engineered a real-time drone detection system using YOLOv8 and OpenCV on live video streams, achieving high precision in distin- guishing drones from birds via physics-informed motion ltering (speed, trajectory, stability). Reduced false positive rate signicantly by integrating kinematic constraints into the object classication post-processing stage. Deployed an IoT alert layer using ESP32 microcontrollers and Telegram API for automated real-time threat notications. Built a complete end-to-end pipeline covering video ingestion, detection, classication, and alert dispatch; validated on real-world footage and a custom-annotated dataset.",
             "links": []
         },
         {
             "type": "education",
             "title": "Aditya Silver Oak Institute of Technology",
-            "details": "2022 \u0015 2026 B.Tech in Computer Engineering | CGPA: 8.88 / 10 Ahmedabad, India ",
+            "details": "2022  2026 B.Tech in Computer Engineering | CGPA: 8.88 / 10 Ahmedabad, India",
             "links": []
         },
         {
             "type": "education",
             "title": "The Earth Public School",
-            "details": "2019 \u0015 2022 Higher Secondary Certi\u001ccate (HSC), Science Stream Publications & Achievements Published: \u0010Scenario-Driven Land Changes Anomaly Assessment for Border Surveillance,\u0011 IJERT, 2025. DOI: 10.5281/zenodo.18441874 Defense Collaboration: Selected as Research Fellow at DRDL (DRDO) while in 3rd year of undergraduate studies. Academic Standing: Maintained CGPA of 8.88/10 across the Computer Engineering program. ",
+            "details": "2019  2022 Higher Secondary Certicate (HSC), Science Stream",
+            "links": []
+        },
+        {
+            "type": "publication",
+            "title": "Scenario-Driven Land Changes Anomaly Assessment for Border Surveillance",
+            "details": "Published: IJERT, 2025. DOI: 10.5281/zenodo.18441874",
             "links": []
         }
     ],

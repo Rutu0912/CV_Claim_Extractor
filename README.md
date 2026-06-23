@@ -151,6 +151,8 @@ This keeps the matching predictable, explainable, and avoids assumptions across 
 
 3. Link-to-claim matching is based on local text association and may not always reflect visual relationships within the document.
 
+4. PDF text extraction depends on the reading order provided by the document. In some multi-column or densely formatted resumes, separate entries may occasionally be merged, split, or ordered differently than their visual layout.
+
 ---
 
 ## Design Choices

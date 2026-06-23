@@ -9,12 +9,18 @@ A command-line Python tool that extracts structured information from CV PDFs and
 
 ## Setup
 
-Clone the repository:
+### Option 1: Clone with Git
 
 ```bash
 git clone https://github.com/Rutu0912/CV_Claim_Extractor.git
 cd CV_Claim_Extractor
 ```
+
+### Option 2: Download ZIP
+
+If Git is not installed, download the repository as a ZIP file from GitHub and extract it locally.
+
+Open a terminal inside the extracted project folder.
 
 Create a virtual environment and install dependencies:
 
@@ -52,11 +58,17 @@ python extract.py
 
 the program displays usage information and exits cleanly.
 
+If the PDF does not contain a text layer:
+
+```text
+image-only pdf — no text layer
+```
+
+is displayed and the program exits.
+
 ---
 
 ## Output Structure
-
-The generated JSON contains:
 
 ### Candidate
 
@@ -92,60 +104,52 @@ The generated JSON contains:
 
 Email addresses and phone numbers are extracted using regular expressions.
 
-Candidate name extraction uses deterministic heuristics applied to the top portion of the resume. Lines containing links, emails, numbers, or non-name patterns are filtered out before selecting the most likely candidate name.
+Candidate names are identified using deterministic heuristics applied to the top section of the resume. The extractor filters out contact information, links, section headings, qualification indicators, and other non-name content before selecting the most likely candidate name.
 
-### Section Heading Detection
+### Section Detection
 
-Section headings are detected using document formatting rather than relying only on fixed keywords. The extractor analyzes font size, text emphasis (bold text), and heading-like structure to identify section boundaries. This approach makes the extraction process more adaptable to different resume formats and naming conventions.
+The extractor identifies section boundaries using document structure and formatting signals such as font size, text emphasis, and heading-like layout.
+
+This allows it to work with different heading names and resume styles instead of relying only on fixed keywords.
 
 ### Link Extraction
 
-Links are collected from two sources:
+Links are collected from:
 
 1. URLs present directly in resume text
-2. Embedded PDF hyperlinks obtained through PDF annotations
+2. Embedded PDF hyperlink annotations
 
-This helps detect links even when the visible text only contains labels such as GitHub, LinkedIn, Portfolio, or Repository.
+This allows detection of links even when the visible text is only a label such as GitHub, LinkedIn, Portfolio, or Repository.
 
 ### Claim Extraction
 
-Resume content is first divided into logical text blocks extracted from the PDF. Using detected section boundaries, related blocks are grouped into individual claims such as jobs, projects, education entries, certifications, publications, or hackathons.
+Resume content is grouped into logical entries using PDF text blocks, section boundaries, dates, bullet points, and continuation lines.
 
-Special handling is applied for bullet points, continuation lines, dates, and GPA information to keep related content grouped together and reduce fragmented claims.
+This helps keep related information together and reduces fragmented claims.
 
 ### Claim Classification
 
-Each extracted claim is classified into a specific category using a combination of title patterns, job-title indicators, degree indicators, action verbs, date patterns, publication signals, and other contextual clues.
+Claim classification primarily uses the section in which an entry appears, such as Experience, Education, Projects, Certifications, Publications, or Hackathons.
 
-Multiple signals are considered together to improve classification accuracy while keeping the system fully deterministic.
+When section information is unclear, additional structural signals such as dates, degree indicators, certification indicators, publication indicators, and project-related patterns are used as fallbacks.
+
+This approach reduces dependence on specific job titles and makes the classification more adaptable across different resume styles and domains.
 
 ### Claim-to-Link Matching
 
 Links are attached only to the claim in which they appear.
 
-This local matching strategy keeps the behavior predictable, explainable, and avoids making assumptions across unrelated sections.
+This keeps the matching predictable, explainable, and avoids assumptions across unrelated sections.
 
 ---
 
 ## Limitations
 
-1. Extraction quality depends on the text structure available within the PDF.
+1. Extraction quality depends on the text structure available in the PDF.
 
-2. Complex layouts containing multiple columns, tables, sidebars, or heavily customized formatting may affect text ordering and extraction quality.
+2. Highly customized layouts, tables, sidebars, or complex multi-column designs may affect extraction quality.
 
-3. Candidate name extraction and claim classification rely on deterministic heuristics and may be less accurate for unusual resume formats.
-
-4. Link-to-claim matching is based on local text association and may not always capture visually related links located elsewhere in the document.
-
----
-
-## Future Improvements
-
-- Improve support for complex multi-column resume layouts.
-- Improve claim grouping for highly customized resume structures.
-- Enhance classification using additional document structure signals.
-- Improve layout-aware link association techniques.
-- Expand support for a wider variety of resume formats.
+3. Link-to-claim matching is based on local text association and may not always reflect visual relationships within the document.
 
 ---
 
@@ -157,5 +161,5 @@ This local matching strategy keeps the behavior predictable, explainable, and av
 - No OCR
 - No database
 - No UI
-- Command-line based execution
+- Command-line execution
 - Explainable rule-based heuristics

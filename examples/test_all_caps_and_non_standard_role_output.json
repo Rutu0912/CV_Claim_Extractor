@@ -39,7 +39,13 @@
         {
             "type": "certification",
             "title": "Six Sigma Green Belt Certified",
-            "details": "Certified Supply Chain Professional (CSCP)",
+            "details": "",
+            "links": []
+        },
+        {
+            "type": "certification",
+            "title": "Certified Supply Chain Professional (CSCP)",
+            "details": "",
             "links": []
         }
     ],

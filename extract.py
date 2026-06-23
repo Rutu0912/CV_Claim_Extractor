@@ -51,7 +51,7 @@ def starts_with_bullet(line):
     return not line[:1].isalnum()
 
 
-## ===== 2A. SECTION-HEADING -> CLAIM-TYPE MAP ===== ##
+## ===== 2A. SECTION-HEADING -> CLAIM-TYPE MAP ===== ## 
 
 ALLOWED_CLAIM_TYPES = {
     "experience", "education", "project", "certification", "publication", "hackathon"

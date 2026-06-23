@@ -91,7 +91,7 @@
             ]
         },
         {
-            "type": "publication",
+            "type": "project",
             "title": "Research: Efficient Transformers",
             "details": "Published at ACL 2023 \u2014 sparse attention mechanisms. Paper: https://arxiv.org/abs/2301.12345",
             "links": [

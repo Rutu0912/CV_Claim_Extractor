@@ -20,7 +20,11 @@ cd CV_Claim_Extractor
 
 Download the repository as a ZIP file from GitHub and extract it locally.
 
-Open a terminal inside the extracted project folder.
+Open a terminal and navigate to the extracted project folder:
+
+```bash
+cd CV_Claim_Extractor-main
+```
 
 ### Install Dependencies
 

@@ -70,6 +70,24 @@
             "links": []
         },
         {
+            "type": "project",
+            "title": "OpenBlog \u2014 Headless CMS Platform",
+            "details": "",
+            "links": []
+        },
+        {
+            "type": "project",
+            "title": "StockSense \u2014 ML Stock Prediction Dashboard",
+            "details": "",
+            "links": []
+        },
+        {
+            "type": "project",
+            "title": "ContribHub \u2014 Open Source Dashboard",
+            "details": "",
+            "links": []
+        },
+        {
             "type": "publication",
             "title": "LSTM vs Transformer for Time Series Forecasting: An Empirical Study",
             "details": "Rohan Verma \u2014 ICML Workshop 2023 https://arxiv.org/abs/2306.14821",

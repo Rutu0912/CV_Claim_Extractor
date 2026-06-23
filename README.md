@@ -18,11 +18,11 @@ cd CV_Claim_Extractor
 
 ### Option 2: Download ZIP
 
-If Git is not installed, download the repository as a ZIP file from GitHub and extract it locally.
+Download the repository as a ZIP file from GitHub and extract it locally.
 
 Open a terminal inside the extracted project folder.
 
-Create a virtual environment and install dependencies:
+### Install Dependencies
 
 ```bash
 python -m venv venv

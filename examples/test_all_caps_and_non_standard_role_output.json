@@ -1,0 +1,51 @@
+{
+    "candidate": {
+        "name": "DEEPAK MALHOTRA",
+        "email": "deepak.malhotra@email.com",
+        "phone": "+91 90123 45678"
+    },
+    "links": [
+        {
+            "url": "linkedin.com/in/deepakmalhotra",
+            "source": "text",
+            "anchor": "linkedin.com/in/deepakmalhotra"
+        }
+    ],
+    "claims": [
+        {
+            "type": "experience",
+            "title": "Operations Manager",
+            "details": "Apr 2021 \u2013 Present DTDC Logistics, Jaipur Managed daily warehouse and dispatch operations for a regional hub handling 15,000+ shipments per",
+            "links": []
+        },
+        {
+            "type": "experience",
+            "title": "Assistant Operations Manager",
+            "details": "Jul 2017 \u2013 Mar 2021 Future Retail Ltd., Jaipur Coordinated back-office administration including billing, stock reconciliation, and vendor payments. Supervised a team of 12 in daily store operations across 3 outlet locations. Improved order processing accuracy from 88% to 97% through revised SOPs.",
+            "links": []
+        },
+        {
+            "type": "experience",
+            "title": "Operations Executive",
+            "details": "Jun 2014 \u2013 Jun 2017 Blue Dart Express, Jaipur Handled day-to-day administrative tasks including documentation, scheduling, and client coordination. Assisted in onboarding and training of 20+ new operations staff.",
+            "links": []
+        },
+        {
+            "type": "education",
+            "title": "MBA in Operations Management",
+            "details": "2012 \u2013 2014 University of Rajasthan, Jaipur",
+            "links": []
+        },
+        {
+            "type": "certification",
+            "title": "Six Sigma Green Belt Certified",
+            "details": "Certified Supply Chain Professional (CSCP)",
+            "links": []
+        }
+    ],
+    "meta": {
+        "pages": 2,
+        "has_text_layer": true,
+        "warnings": []
+    }
+}
